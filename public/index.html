@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="rentgarant" content="rent house for students" />
+
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+
+    <title>Rent Garant</title>
+  </head>
+
+  <body style="margin: 0">
+    <div id="root"></div>
+
+    <script>
+      var loadMultipleCss = function () {
+        loadCss("bootstrap.min.css");
+        loadCss("poppins.min.css");
+      };
+      var loadCss = function (cssPath) {
+        var cssLink = document.createElement("link");
+        cssLink.rel = "stylesheet";
+        cssLink.href = cssPath;
+        var head = document.getElementsByTagName("head")[0];
+        head.parentNode.insertBefore(cssLink, head);
+      };
+      window.addEventListener("load", loadMultipleCss);
+    </script>
+  </body>
+</html>
